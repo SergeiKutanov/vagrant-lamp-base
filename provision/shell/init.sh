@@ -30,7 +30,7 @@ echo $IPADDR ubuntu.localhost >> /etc/hosts
 # Install basic tools
 apt-get -y install build-essential binutils-doc git
 
-apt-get -y install php5 php5-curl php5-mysql php5-sqlite php5-xdebug
+apt-get -y install php5 php5-dev php5-curl php5-mysql php5-sqlite php5-xdebug
 
 sed -i "s/display_startup_errors = Off/display_startup_errors = On/g" ${PHP_CONFIG_FILE}
 sed -i "s/display_errors = Off/display_errors = On/g" ${PHP_CONFIG_FILE}
